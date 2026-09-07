@@ -2,7 +2,7 @@
 
 (function () {
   var KEY = 'jgm-theme';
-  var mode = 'light';
+  var mode = 'dark';
   try { var s = localStorage.getItem(KEY); if (s === 'dark' || s === 'light') mode = s; } catch (e) {}
   function apply() {
     document.documentElement.classList.toggle('dark', mode === 'dark');
